@@ -1,3 +1,3 @@
 class PhotoUploader < CarrierWave::Uploader::Base
-  include Cloudinary::Carrierwave
+  include Cloudinary::CarrierWave
 end

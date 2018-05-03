@@ -1,0 +1,19 @@
+<h1>Coucou all!</h1>
+
+<div class="container">
+  <% @photos.each do |photo| %>
+    <div class="photo-container">
+      <h3><%= photo.title %></h3>
+      <p>Category: <%= photo.category %></p>
+      <%= cl_image_tag photo.url %>
+    </div>
+  <% end %>
+
+  <% @videos.each do |video| %>
+    <div class="video-container">
+      <h3><%= video.title %></h3>
+      <p>Category: <%= video.category %></p>
+      <%= cl_image_tag video.url %>
+    </div>
+  <% end %>
+</div>
