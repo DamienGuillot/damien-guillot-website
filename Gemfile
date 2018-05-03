@@ -8,6 +8,15 @@ end
 # Devise to put an admin
 gem 'devise'
 
+# Figaro to hide API Keys
+gem 'figaro'
+
+# Generar
+gem 'faker'
+
+# Cloudinary (To Host Images)
+gem 'cloudinary'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use postgresql as the database for Active Record
