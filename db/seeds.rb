@@ -12,7 +12,7 @@ puts "Damien Admin created!"
 
 caterogies = [ 'event', 'profile', 'food', 'portrait', 'corporate' ]
 
-10.times do
+30.times do
   new_photo = Photo.new(title: Faker::Simpsons.character, category: caterogies.sample, user_id: damien.id)
   new_photo.remote_url_url = "https://picsum.photos/200/300/?random"
   new_photo.save
@@ -20,7 +20,7 @@ end
 
 puts "Photos created"
 
-10.times do
+20.times do
   new_video = Video.new(title: Faker::Simpsons.character, category: caterogies.sample, user_id: damien.id)
   new_video.remote_url_url = "https://picsum.photos/200/300/?random"
   new_video.save
