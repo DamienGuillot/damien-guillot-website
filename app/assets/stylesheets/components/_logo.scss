@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.container-logo {
+  border: 1.5px solid rgba(20,20,20, 0.8);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.logo-title {
+  margin-top: 10px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
