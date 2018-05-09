@@ -11,6 +11,8 @@ console.log('Hello World from Webpacker')
 // import 'fullpage.js'
 // import '../components/_custom_fullpage.js'
 
+
+
 // Selecting Navigation bar
 const navigation = document.querySelector('.navigation');
 
@@ -28,7 +30,12 @@ const sectionLanding = document.querySelector('.landing-section');
 const sectionPhotos = document.querySelector('.photos-section');
 const sectionVideos = document.querySelector('.videos-section');
 const sectionContact = document.querySelector('.contact-section');
- console.log(sectionLanding);
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const sectionLandingImg = document.querySelector('.landing-image');
+  sectionLandingImg.style.opacity = '1';
+});
 
 function navGoRight() {
   navigation.classList.remove('go-left');

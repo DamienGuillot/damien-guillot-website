@@ -1,5 +1,4 @@
 .landing-section {
-  // left: 20vw;
   display: flex;
   height: 100vh;
   right: 0;
@@ -9,4 +8,6 @@
   width: 100%;
   position: relative;
   background-size: cover;
+  opacity: 0;
+  transition: all 10s;
 }
