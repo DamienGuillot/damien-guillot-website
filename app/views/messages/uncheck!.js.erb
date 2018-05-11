@@ -1,3 +1,6 @@
+var sup = document.getElementById('sup');
+console.log(sup);
+
 var nbUncheckedMessages = document.getElementById('nb-unchecked-messages');
 
 nbUncheckedMessages.innerText = '<%= Message.where(checked: false).count %>';

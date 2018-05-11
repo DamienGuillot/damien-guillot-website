@@ -61,8 +61,20 @@ function displaySection(sectionName) {
 // navVideos.addEventListener('click', navGoLeft);
 // navContact.addEventListener('click', navGoRight);
 
-navLanding.addEventListener('click', function() { displaySection(sectionLanding) } );
-navPhotos.addEventListener('click', function() { displaySection(sectionPhotos) } );
-navVideos.addEventListener('click', function() { displaySection(sectionVideos) } );
-navInstagram.addEventListener('click', function() { displaySection(sectionInstagram) } );
-navContact.addEventListener('click', function() { displaySection(sectionContact) } );
+if ( navLanding && navPhotos && navVideos && navInstagram && navContact) {
+  navLanding.addEventListener('click', function() { displaySection(sectionLanding) } );
+  navPhotos.addEventListener('click', function() { displaySection(sectionPhotos) } );
+  navVideos.addEventListener('click', function() { displaySection(sectionVideos) } );
+  navInstagram.addEventListener('click', function() { displaySection(sectionInstagram) } );
+  navContact.addEventListener('click', function() { displaySection(sectionContact) } );
+}
+
+function reload() {
+  console.log('oula');
+  $('.container-messages').load(document.URL +  ' .container-messages');
+}
+
+setInterval(reload, 2000);
+
+
+
