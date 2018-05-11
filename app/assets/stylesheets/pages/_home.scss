@@ -1,1 +1,15 @@
 // Specific CSS for your home-page
+.section-slidinhojs {
+  display: none;
+  position: fixed;
+  right: 0;
+  width: 80vw;
+  height: 100%;
+  overflow: scroll;
+  background-color: $light-gray;
+  padding: 25px;
+}
+
+.section-active {
+  display: flex;
+}

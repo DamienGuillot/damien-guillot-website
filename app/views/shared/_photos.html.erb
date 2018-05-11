@@ -1,1 +1,11 @@
-<h1>PHOTOS</h1>
+<div class="section-slidinhojs photos-section">
+  <div class="container-photos">
+    <div class="row">
+      <%= @photos.each do |photo| %>
+        <div class="col-xs-12 col-sm-6 col-md-3 column-img">
+          <%= cl_image_tag photo.url %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

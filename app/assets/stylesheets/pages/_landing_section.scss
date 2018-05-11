@@ -1,0 +1,11 @@
+.landing-section {
+  height: 100vh;
+}
+
+.landing-image {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  opacity: 0;
+  transition: all 10s;
+}

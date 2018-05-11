@@ -1,1 +1,11 @@
-<h1>VIDEO</h1>
+<div class="section-slidinhojs videos-section">
+  <div class="container-videos">
+    <div class="row">
+      <%= @videos.each do |video| %>
+        <div class="col-xs-12 col-sm-6 col-md-3 column-img">
+          <%= cl_image_tag video.url %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

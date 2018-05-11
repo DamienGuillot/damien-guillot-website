@@ -1,0 +1,71 @@
+<% if @message.valid? %>
+  const formContainer = document.querySelector('.form-container')
+  formContainer.innerHTML = `
+  <div class="thanks-message-container">
+    <h3 id="thanks-message">Thanks for your message!</h3>
+  </div>`;
+
+
+  // var messageContainer = document.querySelector('.container-messages');
+  // alert(messageContainer);
+
+
+  // messageContainer.innerHTML = `
+  //   <div class="message" style="background-color: #ccc" data-message-id="<%= @message.id %>">
+  //     <div class="message-display-part">
+  //       <span><%= @message.created_at.strftime("%^b %d %Y at %I:%M%p") %></span>
+  //       <span><%= @message.name %></span>
+  //       <span><%= @message.email %></span>
+  //       <div class="message-state-action" data-message-id="<%= @message.id %>">
+  //         <% if @message.checked %>
+  //         <%= link_to 'Mark as unchecked', message_uncheck_path(@message), remote: true, method: :post %>
+  //         <% else %>
+  //         <%= link_to 'Mark as checked', message_check_path(@message), remote: true, method: :post %>
+  //         <% end %>
+  //       </div>
+  //     </div>
+  //     <div class="message-hidden-part">
+  //       <span><%= @message.content %></span>
+  //       <span><%= @message.phone ? @message.phone : "" %></span>
+  //     </div>
+  //   </div>
+  // `;
+<% else %>
+
+  function erros(field, messageError) {
+    document.getElementById(`${field}-errro`).innerText = messageError;
+    document.querySelector(`.message_${field} label`).style.color = '#8d7ed0';
+    document.getElementById(`message_${field}`).style.borderColor = '#8d7ed0';
+  }
+
+  function noErros(field) {
+    document.getElementById(`${field}-errro`).innerText = '';
+    document.querySelector(`.message_${field} label`).style.color = '#000000';
+    document.getElementById(`message_${field}`).style.borderColor = '#ccc';
+  }
+
+  <% if @message.errors[:name][0].nil? %>
+    noErros('name');
+  <% else %>
+    erros('name', '<%= @message.errors[:name][0] %>');
+  <% end %>
+
+  <% if @message.errors[:email][0].nil? %>
+    noErros('email');
+  <% else %>
+    erros('email', '<%= @message.errors[:email][0] %>');
+  <% end %>
+
+  <% if @message.errors[:phone][0].nil? %>
+    noErros('phone');
+  <% else %>
+    erros('phone', '<%= @message.errors[:phone][0] %>');
+  <% end %>
+
+  <% if @message.errors[:content][0].nil? %>
+    noErros('content');
+  <% else %>
+    erros('content', '<%= @message.errors[:content][0] %>');
+  <% end %>
+
+<% end %>
