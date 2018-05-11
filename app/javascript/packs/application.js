@@ -70,7 +70,6 @@ if ( navLanding && navPhotos && navVideos && navInstagram && navContact) {
 }
 
 function reload() {
-  console.log('oula');
   $('.container-messages').load(document.URL +  ' .container-messages');
 }
 

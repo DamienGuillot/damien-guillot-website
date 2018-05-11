@@ -1,9 +1,9 @@
 <h1>Wassuup Boss?!</h1>
 
 <h2>Messages</h2>
-<p>You have <strong><%= Message.count %></strong> messages in your inbox, and you still have <span id="nb-unchecked-messages" style="text-decoration: underline;"><%= Message.where(checked: false).count %></span> unread messages</p>
 
 <div class="container-messages">
+  <p>You have <strong><%= Message.count %></strong> messages in your inbox, and you still have <span id="nb-unchecked-messages" style="text-decoration: underline;"><%= Message.where(checked: false).count %></span> unread messages</p>
   <% @messages.each do |message| %>
     <% if message.checked %>
       <div class="message" data-message-id="<%= message.id %>">
@@ -29,7 +29,3 @@
     </div>
   <% end %>
 </div>
-
-<script>
-
-</script>
