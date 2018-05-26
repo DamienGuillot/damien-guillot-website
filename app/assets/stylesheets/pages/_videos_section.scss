@@ -1,13 +1,9 @@
-.container-videos {
-  .column-img {
+.column-video {
     padding: 5px !important;
+    text-align: center;
   }
-  img {
-    width: 100%;
-    height: max-content;
-  }
-}
 
-.box-video {
-  height: 150px;
+
+.vp-placeholder-thumb {
+border-radius: 3px !important;
 }

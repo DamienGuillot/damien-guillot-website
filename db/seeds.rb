@@ -20,10 +20,11 @@ end
 
 puts "Photos created"
 
-20.times do
-  new_video = Video.new(title: Faker::Simpsons.character, category: caterogies.sample, user_id: damien.id)
-  new_video.remote_url_url = "https://picsum.photos/200/300/?random"
-  new_video.save
+videos = [ "https://player.vimeo.com/video/236590457?color=ffffff", "https://player.vimeo.com/video/266307622?color=ffffff",
+           "https://player.vimeo.com/video/236584097?color=ffffff" ]
+
+videos.each do |video|
+  Video.create(user_id: damien.id, url: video)
 end
 
 puts "Videos created"

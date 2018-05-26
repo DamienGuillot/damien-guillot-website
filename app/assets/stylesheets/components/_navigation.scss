@@ -5,11 +5,12 @@
   text-align: center;
   position: fixed;
   z-index: 99;
-  background-color: $light-gray;
+  background-color: #FFFFFF;
   ul {
     padding: 0;
     list-style: none;
     font-size: 16px;
+    letter-spacing: 3px;
     line-height: 2.3;
     li {
       cursor: pointer;
