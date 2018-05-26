@@ -1,11 +1,26 @@
 <div class="section-slidinhojs photos-section">
   <div class="container-photos">
     <div class="row">
-      <%= @photos.each do |photo| %>
+      <% i = 0 %>
+      <% @photos.each do |photo| %>
+        <% i += 1 %>
         <div class="col-xs-12 col-sm-6 col-md-3 column-img">
-          <%= cl_image_tag photo.url %>
+          <%= cl_image_tag photo.url, :data => { :index => i } %>
         </div>
       <% end %>
     </div>
   </div>
+
+  <div id="slider-container">
+    <div id="closing-cross"></div>
+    <div id="arrow-left"></div>
+    <% j = 0 %>
+    <% @photos.each do |photo| %>
+      <% j += 1 %>
+      <%= cl_image_tag photo.url, class: 'photo-slider', :data => { :index => j } %>
+    <% end %>
+    <div id="arrow-right"></div>
+  </div>
+
 </div>
+
