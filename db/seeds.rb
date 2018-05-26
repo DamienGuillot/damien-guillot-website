@@ -12,9 +12,29 @@ puts "Damien Admin created!"
 
 caterogies = [ 'event', 'profile', 'food', 'portrait', 'corporate' ]
 
-30.times do
-  new_photo = Photo.new(title: Faker::Simpsons.character, category: caterogies.sample, user_id: damien.id)
-  new_photo.remote_url_url = "https://picsum.photos/200/300/?random"
+photos = [ "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365097/1.jpg",
+           "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365094/4.jpg",
+           "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365094/7.jpg",
+           "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365095/8.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365096/9.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365096/2.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365096/3.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365097/10.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365098/11.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/17.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/16.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/12.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365098/14.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/15.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/13.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365101/18.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365101/20.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365100/19.jpg"
+            ]
+
+photos.each do |photo|
+  new_photo = Photo.new(category: caterogies.sample, user_id: damien.id)
+  new_photo.remote_url_url = photo
   new_photo.save
 end
 
