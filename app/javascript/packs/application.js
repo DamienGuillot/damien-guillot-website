@@ -55,11 +55,6 @@ photos.forEach(function(photo) {
   });
 });
 
-
-
-console.log('Hello World from Webpacker')
-
-
 // Selecting Navigation bar
 const navigation = document.querySelector('.navigation');
 
@@ -67,7 +62,6 @@ const navigation = document.querySelector('.navigation');
 const navLanding = document.getElementById('nav-landing');
 const navPhotos = document.getElementById('nav-photos');
 const navVideos = document.getElementById('nav-videos');
-const navInstagram = document.getElementById('nav-instagram');
 const navContact = document.getElementById('nav-contact');
 
 // Selecting all sections
@@ -77,7 +71,6 @@ const allSections = document.querySelectorAll('.section-slidinhojs');
 const sectionLanding = document.querySelector('.landing-section');
 const sectionPhotos = document.querySelector('.photos-section');
 const sectionVideos = document.querySelector('.videos-section');
-const sectionInstagram = document.querySelector('.instagram-section');
 const sectionContact = document.querySelector('.contact-section');
 
 
@@ -93,11 +86,10 @@ function displaySection(sectionName) {
   sectionName.classList.add('section-active');
 }
 
-if ( navLanding && navPhotos && navVideos && navInstagram && navContact) {
+if ( navLanding && navPhotos && navVideos && navContact) {
   navLanding.addEventListener('click', function() { displaySection(sectionLanding) } );
   navPhotos.addEventListener('click', function() { displaySection(sectionPhotos) } );
   navVideos.addEventListener('click', function() { displaySection(sectionVideos) } );
-  navInstagram.addEventListener('click', function() { displaySection(sectionInstagram) } );
   navContact.addEventListener('click', function() { displaySection(sectionContact) } );
 }
 
