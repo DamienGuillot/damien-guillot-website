@@ -6,8 +6,23 @@
   position: fixed;
   z-index: 99;
   background-color: #FFFFFF;
-  ul {
-    padding: 0;
+}
+
+.go-right {
+  right: 0;
+}
+
+.go-left {
+  left: 0;
+}
+
+.left-nav {
+    top: 106px;
+    left: 31px;
+    right: auto;
+    text-align: left;
+    ul {
+    // padding: 0;
     list-style: none;
     font-size: 12px;
     letter-spacing: 3px;
@@ -18,10 +33,9 @@
   }
 }
 
-.go-right {
-  right: 0;
-}
-
-.go-left {
-  left: 0;
+.copyright {
+  position: absolute;
+    bottom: 10px;
+    left: 12px;
+  font-size: 10px;
 }
