@@ -15,19 +15,21 @@
 #slider-container {
   display: none;
   position: fixed;
+  z-index: 999;
   left: 0;
   width: 100%;
   height: 100vh;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: rgba(255,255,255,0.85);
 }
 
 .photo-slider {
   display: none;
+  width: 65%;
 }
 
-.image-slider-active {
+.photo-slider-active {
   display: block;
 }
 
@@ -37,6 +39,7 @@
   width: 35px;
   height: 35px;
   transform: rotate(45deg);
+  margin-left: 50px;
 }
 
 #arrow-left {
@@ -45,4 +48,39 @@
   width: 35px;
   height: 35px;
   transform: rotate(-45deg);
+  margin-right: 50px;
+}
+
+#closing-cross {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(45deg);
+  &:hover #cross-horizontal-part {
+   transform: rotate(-45deg);
+  };
+  &:hover #cross-vertical-part {
+    transform: rotate(45deg);
+  };
+}
+
+#cross-vertical-part {
+  background-color: #000;
+  height: 100%;
+  width: 1px;
+  transition: all 0.3s;
+}
+
+#cross-horizontal-part {
+  background-color: #000;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s;
 }
