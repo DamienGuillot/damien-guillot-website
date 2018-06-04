@@ -4,16 +4,7 @@
   height: 100vh;
   text-align: center;
   position: fixed;
-  // z-index: 99;
   background-color: #FFFFFF;
-}
-
-.go-right {
-  right: 0;
-}
-
-.go-left {
-  left: 0;
 }
 
 .left-nav {
@@ -22,7 +13,7 @@
     right: auto;
     text-align: left;
     ul {
-    // padding: 0;
+    padding-left: 25px;
     list-style: none;
     font-size: 12px;
     letter-spacing: 3px;

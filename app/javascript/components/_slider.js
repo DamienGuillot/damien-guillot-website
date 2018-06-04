@@ -1,5 +1,5 @@
 const containerSlider = document.getElementById('slider-container');
-const photos = document.querySelectorAll('.column-img img');
+const photos = document.querySelectorAll('#container-photos img');
 const photosSlider = document.querySelectorAll('.photo-slider');
 const leftArrow = document.getElementById('arrow-left');
 const rightArrow = document.getElementById('arrow-right');
@@ -41,11 +41,31 @@ leftArrow.addEventListener('click', function() {
 
 document.addEventListener('keyup', function(event){
   if ( event.keyCode === 39 ) {
+    rightArrow.style.marginLeft = '90px';
+    rightArrow.style.opacity = 0.5;
     changePhoto(1);
   } else if ( event.keyCode === 37 ) {
+    leftArrow.style.marginRight = '90px';
+    leftArrow.style.opacity = 0.5;
     changePhoto(-1);
   }
 });
+
+document.addEventListener('keydown', function(event){
+  if ( event.keyCode === 39 ) {
+    rightArrow.style.marginLeft = '100px';
+    rightArrow.style.opacity = 1;
+  } else if ( event.keyCode === 37 ) {
+    leftArrow.style.marginRight = '100px';
+    leftArrow.style.opacity = 1;
+  } else {
+    rightArrow.style.marginLeft = '90px';
+    rightArrow.style.opacity = 0.5;
+    leftArrow.style.marginRight = '90px';
+    leftArrow.style.opacity = 0.5;
+  }
+});
+
 
 const closingCross = document.getElementById('closing-cross');
 
