@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.3.10/plyr.css">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
     <%= javascript_pack_tag  'application'%>
+    <script src="https://cdn.plyr.io/3.3.10/plyr.js"></script>
+    <script>const player = new Plyr('.player');</script>
   </body>
 
 </html>

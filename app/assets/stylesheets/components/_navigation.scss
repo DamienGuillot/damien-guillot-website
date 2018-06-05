@@ -3,7 +3,6 @@
   width: 20%;
   height: 100vh;
   text-align: center;
-  position: fixed;
   background-color: #FFFFFF;
 }
 
@@ -29,4 +28,8 @@
     bottom: 10px;
     left: 12px;
   font-size: 10px;
+}
+.nav-wrapper{
+  position: fixed;
+  height: 100vh;
 }

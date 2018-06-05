@@ -1,14 +1,28 @@
 // Specific CSS for your home-page
+
+.screen{
+  display: flex;
+  width: 100%;
+}
+
+.content-wrapper{
+  width: 80%;
+}
+
 .section-slidinhojs {
-  display: none;
-  position: fixed;
-  right: 0;
-  width: 80vw;
-  height: 100%;
-  overflow: scroll;
-  background-color: #FFFFFF;
+    display: none;
+//    overflow: scroll;
+    background-color: #FFFFFF;
 }
 
 .section-active {
   display: flex;
+}
+
+
+.hidden-xs{
+  @media (max-width: $screen-xs) {
+   display: none;
+  }
+
 }
