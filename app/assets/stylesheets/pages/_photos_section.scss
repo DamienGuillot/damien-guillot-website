@@ -1,9 +1,12 @@
+
+
 #container-photos {
   position: relative;
   top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 30px;
   img {
     height: 200px;
     margin: 8px;
@@ -19,7 +22,7 @@
   display: none;
   position: fixed;
   -webkit-transform: translate3d(0,0,0);
-  overflow: visible;
+//  overflow: visible;
   // z-index: 999;
   left: 0;
   // width: 100%;

@@ -1,18 +1,14 @@
 <div class="section-slidinhojs contact-section">
-  <div class="row">
-    <div class="col-xs-12 col-md-6 image-container">
-      <%= cl_image_tag 'PictureNearForm-compressor.jpg', class: 'image-contact-section' %>
-    </div>
-    <div class="col-xs-12 col-md-6 form-container">
-      <div class="body">
-        <h2>CREATOR.</h2>
-        <p>Located in Paris</p>
-      </div>
-      <div class="form">
-        <h2>LETS CONNECT.</h2>
-        <%= render 'messages/form' %>
-      </div>
 
+    <%= cl_image_tag 'PictureNearForm-compressor.jpg', class: 'image-contact-section' %>
+  <div class="form-wrapper">
+    <div class="body">
+      <h2>CREATOR.</h2>
+      <p>Located in Paris</p>
+    </div>
+    <div class="form">
+      <h2>LETS CONNECT.</h2>
+      <%= render 'messages/form' %>
     </div>
   </div>
 </div>

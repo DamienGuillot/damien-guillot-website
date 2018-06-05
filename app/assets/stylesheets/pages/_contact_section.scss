@@ -1,6 +1,7 @@
 .contact-section {
   // justify-content: space-around;
   align-items: center;
+  margin-top: 50px;
   .row {
     display: flex;
     align-items: center;
@@ -8,8 +9,8 @@
 }
 
 .image-contact-section {
-  width: 90%;
-  height: 100%;
+  width: 50%;
+  height: calc(100vh - 50px);
 }
 
 .form-container {
@@ -22,5 +23,16 @@
 }
 
 .btn-form {
+  width: 100%;
+  border: 1px solid #e2dddd;
+  &:hover{
+    text-decoration: none;
+    background: #333333;
+    color: white;
+  }
+}
 
+.form-wrapper{
+  width: 100%;
+  margin: 0 30px;
 }
