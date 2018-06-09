@@ -1,9 +1,15 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1285px) {
   .navigation {
     position: fixed;
     width: 100vw;
-    height: 160px;
+    height: 260px;
     z-index: 9;
+    h1 {
+      font-size: 48px;
+    };
+    li {
+      font-size: 38px;
+    };
   };
   .nav-wrapper {
     position: static;
@@ -15,7 +21,9 @@
     }
   };
   .content-wrapper {
+    position: relative;
     width: 100vw;
+    top: 260px;
   };
   .copyright, #instagram-full-screen {
     display: none;
@@ -24,6 +32,7 @@
     font-size: 270px;
     display: inline-flex;
     position: absolute;
+    z-index: 9;
     top: calc(50vh - 160px + 67.5px);
     left: calc(50vw - 100px);
     background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
