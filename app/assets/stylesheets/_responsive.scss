@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px) {
+  .navigation {
+    position: fixed;
+    width: 100vw;
+    height: 160px;
+    z-index: 9;
+  };
+  .nav-wrapper {
+    position: static;
+    ul {
+      padding-left: 0;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  };
+  .content-wrapper {
+    width: 100vw;
+  };
+  .copyright {
+    display: none;
+  };
+}
