@@ -20,6 +20,10 @@
       width: 100%;
     }
   };
+  #container-photos img {
+    height: 280px;
+    margin: 8px;
+  };
   .content-wrapper {
     position: relative;
     width: 100vw;
@@ -38,5 +42,8 @@
     background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  };
+  .image-contact-section {
+    display: none;
   }
 }

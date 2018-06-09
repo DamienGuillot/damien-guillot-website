@@ -11,6 +11,8 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 
+# Test mailer
+gem "letter_opener", group: :development
 # Devise to put an admin
 gem 'devise'
 
