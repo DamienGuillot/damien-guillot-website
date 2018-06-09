@@ -20,16 +20,18 @@ photos = [ "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365097/1.jpg",
            "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365096/2.jpg",
            "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365096/3.jpg",
            "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365097/10.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365098/11.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/17.jpg",
            "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/16.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/12.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365098/14.jpg",
            "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/15.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/13.jpg",
            "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365101/18.jpg",
            "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365101/20.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365100/19.jpg"
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365100/19.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/Vermont.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566068/BTZ.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/Bagel.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/QLF.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/Patates.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/34045035_10216292543284202_438508936786608128_o.jpg",
+           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/Cuba.jpg"
             ]
 
 photos.each do |photo|
