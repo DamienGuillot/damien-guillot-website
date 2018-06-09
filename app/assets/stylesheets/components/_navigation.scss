@@ -30,31 +30,34 @@
   position: absolute;
   bottom: 10px;
   left: 12px;
-  .copyright {
-    font-size: 10px;
-  };
-  #instagram {
-      font-size: 40px;
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient($black, $black);
-    background: -o-linear-gradient($black, $black);
-    background: -moz-linear-gradient($black, $black);
-    background: linear-gradient($black, $black); /* Standard syntax */
+
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+.instagram {
+  font-size: 40px;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($black, $black);
+  background: -o-linear-gradient($black, $black);
+  background: -moz-linear-gradient($black, $black);
+  background: linear-gradient($black, $black); /* Standard syntax */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  &:hover {
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    &:hover {
-      background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-      background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  };
-  .nav-wrapper{
-    position: fixed;
-    height: 100vh;
   }
+}
 
+.nav-wrapper{
+  position: fixed;
+  height: 100vh;
 }

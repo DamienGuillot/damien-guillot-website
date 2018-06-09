@@ -17,7 +17,17 @@
   .content-wrapper {
     width: 100vw;
   };
-  .copyright {
+  .copyright, #instagram-full-screen {
     display: none;
   };
+  #instagram-small-screen {
+    font-size: 270px;
+    display: inline-flex;
+    position: absolute;
+    top: calc(50vh - 160px + 67.5px);
+    left: calc(50vw - 100px);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
