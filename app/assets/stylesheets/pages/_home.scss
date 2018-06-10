@@ -19,7 +19,6 @@
   display: flex;
 }
 
-
 .hidden-xs{
   @media (max-width: $screen-xs) {
    display: none;

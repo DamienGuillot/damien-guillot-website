@@ -3,7 +3,14 @@
     <div class="row">
       <% @videos.each do |video| %>
         <div class="col-xs-12 column-video">
-          <iframe src="<%= video.url %>" width="640" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <% if policy(Video).destroy? %>
+            <%= link_to video_path(video), :method => :delete, :data => {:confirm => "Are you really sure?"} do %>
+              <i class="far fa-trash-alt delete-photo"></i>
+            <% end %>
+            <iframe src="<%= video.url %>" width="640" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <% else %>
+            <iframe src="<%= video.url %>" width="640" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <% end %>
         </div>
       <% end %>
     </div>

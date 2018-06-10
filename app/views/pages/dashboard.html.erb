@@ -1,8 +1,6 @@
-<h1>Wassuup Boss?!</h1>
+<h1 class="text-center">Dashboard</h1>
 
-<h2>Messages</h2>
-
-<div class="container-messages">
+<div class="container container-messages">
   <p>You have <strong><%= Message.count %></strong> messages in your inbox, and you still have <span id="nb-unchecked-messages" style="text-decoration: underline;"><%= Message.where(checked: false).count %></span> unread messages</p>
   <% @messages.each do |message| %>
     <% if message.checked %>
@@ -27,5 +25,23 @@
         <span><%= message.phone ? message.phone : "" %></span>
       </div>
     </div>
+  <% end %>
+</div>
+
+<div class="container container-photos">
+  <h3>Add a photo</h3>
+  <%= simple_form_for @photo do |f| %>
+    <%= f.input :category, collection: [ 'event', 'profile', 'food', 'portrait', 'corporate' ] %>
+    <%= f.file_field :url %>
+    <%= f.input :url_cache, as: :hidden %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
+
+<div class="container container-videos">
+  <h3>Add a video</h3>
+  <%= simple_form_for @video do |f| %>
+    <%= f.input :url %>
+    <%= f.button :submit %>
   <% end %>
 </div>

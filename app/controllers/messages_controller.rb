@@ -39,7 +39,7 @@ class MessagesController < ApplicationController
       if @message.save
         format.js
       else
-        format.html { render damien_dashboard_path }
+        # format.html { render damien_dashboard_path }
         format.js
       end
     end
