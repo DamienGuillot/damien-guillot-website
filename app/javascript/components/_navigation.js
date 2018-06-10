@@ -36,8 +36,10 @@ if ( navLanding && navPhotos && navVideos && navContact) {
   navContact.addEventListener('click', function() { displaySection(sectionContact) } );
 }
 
-function reload() {
-  $('.container-messages').load(document.URL +  ' .container-messages');
-}
+// Reload container message every 2s
 
-setInterval(reload, 2000);
+// function reload() {
+//   $('.container-messages').load(document.URL +  ' .container-messages');
+// }
+
+// setInterval(reload, 2000);

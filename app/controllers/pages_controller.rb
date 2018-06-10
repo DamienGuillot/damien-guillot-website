@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  skip_before_action :authenticate_user!, only: :home
   before_action :message
 
   def home
@@ -7,9 +8,9 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    @photos = Photo.all
-    @videos = Video.all
     @messages = Message.order("created_at DESC").all
+    @photo = Photo.new
+    @video = Video.new
   end
 
   private
