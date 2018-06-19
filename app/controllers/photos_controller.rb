@@ -15,7 +15,6 @@ class PhotosController < ApplicationController
   def destroy
     authorize @photo
     @photo.destroy
-
     redirect_to root_path
   end
 

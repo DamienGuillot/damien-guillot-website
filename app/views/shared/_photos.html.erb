@@ -6,6 +6,11 @@
         <% i += 1 %>
         <div class="col-xs-12 col-sm-6 col-md-4">
           <%= cl_image_tag photo.url, :data => { :index => i } %>
+          <% if policy(Photo).destroy? %>
+            <%= link_to photo_path(photo), :method => :delete, :data => { :confirm => "Are you really sure?"} do %>
+              <i class="far fa-trash-alt delete-photo"></i>
+            <% end %>
+          <% end %>
         </div>
       <% end %>
     </div>
@@ -20,14 +25,7 @@
     <% j = 0 %>
     <% @photos.each do |photo| %>
       <% j += 1 %>
-      <% if policy(Photo).destroy? %>
-        <%= link_to photo_path(photo), :method => :delete, :data => {:confirm => "Are you really sure?"} do %>
-        <i class="far fa-trash-alt delete-photo"></i>
-      <% end %>
-        <%= cl_image_tag photo.url, class: 'photo-slider', :data => { :index => j } %>
-      <% else %>
-        <%= cl_image_tag photo.url, class: 'photo-slider', :data => { :index => j } %>
-      <% end %>
+      <%= cl_image_tag photo.url, class: 'photo-slider', :data => { :index => j } %>
     <% end %>
     <div id="arrow-right"></div>
   </div>
