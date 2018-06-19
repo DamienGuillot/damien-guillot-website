@@ -35,7 +35,7 @@ photos = [ "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365097/1.jpg",
             ]
 
 photos.each do |photo|
-  new_photo = Photo.new(category: caterogies.sample, user_id: damien.id)
+  new_photo = Photo.new(category: caterogies.sample)
   new_photo.remote_url_url = photo
   new_photo.save
 end
@@ -46,7 +46,7 @@ videos = [ "https://player.vimeo.com/video/236590457?color=ffffff", "https://pla
            "https://player.vimeo.com/video/236584097?color=ffffff" ]
 
 videos.each do |video|
-  Video.create(user_id: damien.id, url: video)
+  Video.create(url: video)
 end
 
 puts "Videos created"
