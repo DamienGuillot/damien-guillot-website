@@ -13,25 +13,6 @@ puts "Damien Admin created!"
 caterogies = [ 'event', 'profile', 'food', 'portrait', 'corporate' ]
 
 photos = [ "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365097/1.jpg",
-           "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365094/4.jpg",
-           "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365094/7.jpg",
-           "http://res.cloudinary.com/dqkzp8fae/image/upload/v1527365095/8.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365096/9.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365096/2.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365096/3.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365097/10.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/16.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365099/15.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365101/18.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365101/20.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1527365100/19.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/Vermont.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566068/BTZ.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/Bagel.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/QLF.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/Patates.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/34045035_10216292543284202_438508936786608128_o.jpg",
-           "https://res.cloudinary.com/dqkzp8fae/image/upload/v1528566067/Cuba.jpg"
             ]
 
 photos.each do |photo|
@@ -42,7 +23,7 @@ end
 
 puts "Photos created"
 
-videos = [ "https://player.vimeo.com/video/236590457?color=ffffff", "https://player.vimeo.com/video/266307622?color=ffffff",
+videos = [ "https://player.vimeo.com/video/236590457?color=ffffff", "https://player.vimeo.com/video/279733863?color=ffffff", "https://player.vimeo.com/video/276750873?color=ffffff"  "https://player.vimeo.com/video/266307622?color=ffffff",
            "https://player.vimeo.com/video/236584097?color=ffffff" ]
 
 videos.each do |video|
